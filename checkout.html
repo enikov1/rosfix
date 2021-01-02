@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Оформление заказа</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-7 col-sm-5 col-lg-4">
+              <p class="header_top-left text-nowrap">Производство и продажа фиксаторов арматуры</p>
+            </div>
+            <div class="order-1 order-xl-0 offset-md-1 offset-lg-0 col-2 col-sm-2 col-md-3 col-lg-6 col-xl-5">
+              <div class="d-lg-none d-flex justify-content-end">
+                <div class="burger-menu"><span></span><span></span><span></span></div>
+              </div>
+              <ul class="header_top-nav header_top-nav-active d-lg-flex justify-content-lg-between">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Покупателям</a></li>
+                <li><a href="#">Продавцам</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="offset-sm-3 offset-md-1 col-3 col-sm-2 col-md-2 col-lg-1 col-xl-2 d-flex justify-content-end align-items-center wrap-locale" data-fancybox="locale-popup" data-src="#locale-popup"><span class="d-sm-none d-md-block icon-maps"></span><span class="header_top-text text-nowrap d-none d-sm-block">Санкт-Петербург</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6 col-md-3 col-lg-3"><a class="logo" href="/"><img src="./img/logo.png" alt=""></a></div>
+            <div class="col-2 col-md-3 offset-lg-1"><a class="header_bottom-item" href="tel:+7812241-15-90"><i class="icon-phone-call"></i><span class="text-phone text-nowrap d-none d-md-flex">+7 (812)<b>241-15-90</b></span></a></div>
+            <div class="col-2 col-md-3 offset-md-1 offset-lg-0 col-lg-2"><a class="header_bottom-item" href="mailto:info@rosfixator.ru"><i class="icon-message"></i><span class="text-message text-nowrap d-none d-md-flex">info@<span>rosfixator.ru</span></span></a></div>
+            <div class="col-2 col-md-1 offset-md-1 offset-lg-2 d-flex justify-content-end">
+              <div class="header_bottom-right"><a href="#"><i class="icon-card"></i>
+                  <div class="card-count">5</div></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="catalog row">
+        <div class="col-4 col-sm-4 col-lg-3 width-sm-100">
+          <div class="btn-catalog" data-fancybox="catalog-popup" data-src="#catalog-popup"><i class="icon-menu"></i><span class="text-nowrap">Каталог товаров</span>
+            <div class="c-ripple js-ripple">
+              <div class="c-ripple__circle"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-8 col-sm-8 col-lg-9 width-sm-100">
+          <form class="form-search" action="">
+            <input class="field" id="search" type="text" placeholder="Начинайте вводить название или технические характеристики товара">
+            <button type="submit"><i class="icon-search"></i></button><span id="loading"></span>
+            <div id="search-result">
+              <div class="scrollbar-inner"></div>
+              <div class="result-content"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="speedbar row">
+        <div class="col align-content-center" itemscope="" itemtype="http://schema.org/BreadcrumbList"><span itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item" title="Главная"><span itemprop="name">Главная</span><meta itemprop="position" content="1"></a></span><i class="icon-next"></i><span itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a href="" itemprop="item" title="Корзина"><span itemprop="name">Корзина</span><meta itemprop="position" content="2"></a></span><i class="icon-next"></i><span itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem"><a itemprop="item" title="Оформление заказа"><span itemprop="name">Оформление заказа</span><meta itemprop="position" content="3"></a></span></div>
+      </div>
+      <div class="row mrb-30">
+        <div class="col-12">
+          <div class="row page-wrap page-checkout">
+            <div class="col-12">
+              <h1 class="title">Оформление заказа</h1>
+            </div>
+            <div class="col-12">
+              <form class="row" action="">
+                <div class="col-12 col-md-7 col-xl-6">
+                  <div class="field-set field-text">
+                    <label class="icon-man-user"></label>
+                    <input type="text" placeholder="Контактное лицо*">
+                  </div>
+                  <div class="field-set field-text">
+                    <label class="icon-email"></label>
+                    <input type="text" placeholder="Адрес электронной почты*">
+                  </div>
+                  <div class="field-set field-text">
+                    <label class="icon-phone-call"></label>
+                    <input type="tel" placeholder="Телефон*">
+                  </div>
+                  <div class="field-set field-text text-right">
+                    <label class="icon-truck"></label>
+                    <input type="text" placeholder="Укажите адрес доставки (если требуется)"><a href="#">Тарифы на доставку</a>
+                  </div>
+                  <div class="field-set textarea-left">
+                    <textarea name="" placeholder="Дополнительная информация (если требуется)"></textarea>
+                  </div>
+                </div>
+                <div class="col-12 col-md-5 col-xl-6">
+                  <div class="field-set first">
+                    <div class="field-check">
+                      <input type="checkbox" id="checkbox_field">
+                      <label class="checkbox" for="checkbox_field" id="checkbox1">Я - представитель организации<span></span></label>
+                    </div>
+                    <p class="descr">Для оформления заказа от юридического лица отметьте галочкой соответствующее поле выше. Далее появится возможность указать реквизиты организации.</p>
+                  </div>
+                  <div class="field-set checked-block">
+                    <div class="field-check">
+                      <input type="radio" name="radio" id="radio1">
+                      <label class="radio" for="radio1">Организация облагается НДС (ОСНО)<span></span></label>
+                    </div>
+                    <div class="field-check">
+                      <input type="radio" name="radio" id="radio2">
+                      <label class="radio" for="radio2">Организация не облагается НДС (УСН)<span></span></label>
+                    </div>
+                  </div>
+                  <div class="field-set textarea-right checked-block">
+                    <textarea name="" id="pay-text"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-12">
+              <p class="form-text">Нажимая кнопку “Отправить заказ” я даю свое <a href="#">согласие на обработку персональных данных</a>, а также выражаю свое согласие с <a href="#">политикой конфиденциальности</a> </p>
+              <div class="form-btn"><a class="btn-form" href="#"><i class="icon-telegram"></i><span>Отправить заказ</span>
+                  <div class="c-ripple js-ripple">
+                    <div class="c-ripple__circle"></div>
+                  </div></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3 col-lg-3"><a class="footer_logo" href="#"><img src="./img/footer_logo.png" alt=""></a></div>
+          <div class="col-12 col-sm-8 col-md-7 col-lg-5">
+            <ul class="footer_list">
+              <li>Адрес: Санкт-Петербург , ул.Ново-Никитинская, 5</li>
+              <li>Телефон: +7(812)241-15-90</li>
+              <li>E-mail: info@rosfixator.ru </li>
+              <li><a href="#">Список региональных сайтов</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-4 col-md-2 offset-lg-0">
+            <ul class="footer_nav">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Покупателям</a></li>
+              <li><a href="#">Продавцам</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-9 offset-md-3 offset-lg-0 col-lg-2 d-flex justify-content-lg-end">
+            <div class="footer_banner d-flex justify-content-between w-100">
+              <div><img src="./img/banner.png" alt=""></div><a class="footer_banner-item" href="#"><img src="./img/pp.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="footer_info">Данный сайт несет исключительно информационный характер и не является публичной офертой, определяемой положением статьи 437 Гражданского кодекса РФ</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup" id="catalog-popup">
+      <button class="popup_close icon-close"></button>
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <div class="popup_header">
+              <h2 class="title"><a href="#">ФИКСАТОРЫ ПОД СЫПУЧИЕ ПОВЕРХНОСТИ (Заголовок H2)</a></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="row catalog-item">
+              <div class="col-auto col-sm-3">
+                <div class="item-image"><img src="./img/catalog-1.png" alt=""></div>
+              </div>
+              <div class="mobile col col-sm-9">
+                <div class="item-info">
+                  <div class="title">СЕРИЯ ФБ</div>
+                  <ul>
+                    <li><a href="#">Фиксатор ФБ-30 (ФС30-35/16)</a></li>
+                    <li><a href="#">Фиксатор ФБ-40 (ФС40-45/18)</a></li>
+                    <li><a href="#">Фиксатор ФБ-55 (ФС55-60/16)</a></li>
+                    <li><a href="#">Вставка к фиксаторам ФБ-30, ФБ-40 и ФБ-55</a></li>
+                    <li><a href="#">Фиксатор ФБ-30 (ФС30-35/16) + вставка</a></li>
+                    <li><a href="#">Фиксатор ФБ-40 (ФС40-45/16) + вставка</a></li>
+                    <li><a href="#">Фиксатор ФБ-55 (ФС55-60/16) + вставка</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row catalog-item">
+              <div class="col-auto col-sm-3">
+                <div class="item-image"><img src="./img/catalog-2.png" alt=""></div>
+              </div>
+              <div class="mobile col col-sm-9">
+                <div class="item-info">
+                  <div class="title">СЕРИЯ ФУ+основание</div>
+                  <ul>
+                    <li><a href="#">Фиксатор ФУ-20 (ФУ20-25/22) + основание</a></li>
+                    <li><a href="#">Фиксатор ФУ-30 (ФУ30-35/22) + основание</a></li>
+                    <li><a href="#">Фиксатор ФУ-40 (ФCУ40-45/22) + основание</a></li>
+                    <li><a href="#">Фиксатор ФУ-50 (ФУ45-50/22) + основание</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <div class="popup_header">
+              <h2 class="title"><a href="#">ФИКСАТОРЫ ДЛЯ ГОРИЗОНТАЛЬНЫХ ПОВЕРХНОСТЕЙ (Заголовок H2)</a></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="row catalog-item">
+              <div class="col-auto col-sm-3">
+                <div class="item-image"><img src="./img/catalog-1.png" alt=""></div>
+              </div>
+              <div class="mobile col col-sm-9">
+                <div class="item-info">
+                  <div class="title">СЕРИЯ ФБ</div>
+                  <ul>
+                    <li><a href="#">Фиксатор ФБ-30 (ФС30-35/16)</a></li>
+                    <li><a href="#">Фиксатор ФБ-40 (ФС40-45/18)</a></li>
+                    <li><a href="#">Фиксатор ФБ-55 (ФС55-60/16)</a></li>
+                    <li><a href="#">Вставка к фиксаторам ФБ-30, ФБ-40 и ФБ-55</a></li>
+                    <li><a href="#">Фиксатор ФБ-30 (ФС30-35/16) + вставка</a></li>
+                    <li><a href="#">Фиксатор ФБ-40 (ФС40-45/16) + вставка</a></li>
+                    <li><a href="#">Фиксатор ФБ-55 (ФС55-60/16) + вставка</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row catalog-item">
+              <div class="col-auto col-sm-3">
+                <div class="item-image"><img src="./img/catalog-2.png" alt=""></div>
+              </div>
+              <div class="mobile col col-sm-9">
+                <div class="item-info">
+                  <div class="title">СЕРИЯ ФУ+основание</div>
+                  <ul>
+                    <li><a href="#">Фиксатор ФУ-20 (ФУ20-25/22) + основание</a></li>
+                    <li><a href="#">Фиксатор ФУ-30 (ФУ30-35/22) + основание</a></li>
+                    <li><a href="#">Фиксатор ФУ-40 (ФCУ40-45/22) + основание</a></li>
+                    <li><a href="#">Фиксатор ФУ-50 (ФУ45-50/22) + основание</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row catalog-item">
+              <div class="col-auto col-sm-3">
+                <div class="item-image"><img src="./img/catalog-1.png" alt=""></div>
+              </div>
+              <div class="mobile col col-sm-9">
+                <div class="item-info">
+                  <div class="title">СЕРИЯ ФБ</div>
+                  <ul>
+                    <li><a href="#">Фиксатор ФБ-30 (ФС30-35/16)</a></li>
+                    <li><a href="#">Фиксатор ФБ-40 (ФС40-45/18)</a></li>
+                    <li><a href="#">Фиксатор ФБ-55 (ФС55-60/16)</a></li>
+                    <li><a href="#">Вставка к фиксаторам ФБ-30, ФБ-40 и ФБ-55</a></li>
+                    <li><a href="#">Фиксатор ФБ-30 (ФС30-35/16) + вставка</a></li>
+                    <li><a href="#">Фиксатор ФБ-40 (ФС40-45/16) + вставка</a></li>
+                    <li><a href="#">Фиксатор ФБ-55 (ФС55-60/16) + вставка</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row catalog-item">
+              <div class="col-auto col-sm-3">
+                <div class="item-image"><img src="./img/catalog-2.png" alt=""></div>
+              </div>
+              <div class="mobile col col-sm-9">
+                <div class="item-info">
+                  <div class="title">СЕРИЯ ФУ+основание</div>
+                  <ul>
+                    <li><a href="#">Фиксатор ФУ-20 (ФУ20-25/22) + основание</a></li>
+                    <li><a href="#">Фиксатор ФУ-30 (ФУ30-35/22) + основание</a></li>
+                    <li><a href="#">Фиксатор ФУ-40 (ФCУ40-45/22) + основание</a></li>
+                    <li><a href="#">Фиксатор ФУ-50 (ФУ45-50/22) + основание</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <div class="popup_header">
+              <h2 class="title">ФИКСАТОРЫ СТЕНОВЫЕ (ЗВЕЗДОЧКИ), КОНУС, НАГЕЛЬ, ТРУБКА И ПРОЧЕЕ (Заголовок H2)</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="row catalog-item">
+              <div class="col-auto col-sm-3">
+                <div class="item-image"><img src="./img/catalog-1.png" alt=""></div>
+              </div>
+              <div class="mobile col col-sm-9">
+                <div class="item-info">
+                  <div class="title"><a href="#">СЕРИЯ ФБ</a></div>
+                  <ul>
+                    <li><a href="#">Фиксатор ФБ-30 (ФС30-35/16)</a></li>
+                    <li><a href="#">Фиксатор ФБ-40 (ФС40-45/18)</a></li>
+                    <li><a href="#">Фиксатор ФБ-55 (ФС55-60/16)</a></li>
+                    <li><a href="#">Вставка к фиксаторам ФБ-30, ФБ-40 и ФБ-55</a></li>
+                    <li><a href="#">Фиксатор ФБ-30 (ФС30-35/16) + вставка</a></li>
+                    <li><a href="#">Фиксатор ФБ-40 (ФС40-45/16) + вставка</a></li>
+                    <li><a href="#">Фиксатор ФБ-55 (ФС55-60/16) + вставка</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row catalog-item">
+              <div class="col-auto col-sm-3">
+                <div class="item-image"><img src="./img/catalog-2.png" alt=""></div>
+              </div>
+              <div class="mobile col col-sm-9">
+                <div class="item-info">
+                  <div class="title"><a href="#">СЕРИЯ ФУ+основание</a></div>
+                  <ul>
+                    <li><a href="#">Фиксатор ФУ-20 (ФУ20-25/22) + основание</a></li>
+                    <li><a href="#">Фиксатор ФУ-30 (ФУ30-35/22) + основание</a></li>
+                    <li><a href="#">Фиксатор ФУ-40 (ФCУ40-45/22) + основание</a></li>
+                    <li><a href="#">Фиксатор ФУ-50 (ФУ45-50/22) + основание</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup_pd" id="locale-popup">
+      <button class="popup_close icon-close"></button>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="popup_header">Выберите ваш регион</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <ul class="popup_list">
+              <li><a href="#">Москва</a></li>
+              <li><a href="#">Санкт-Петербург</a></li>
+              <li><a href="#">Волгоград</a></li>
+              <li><a href="#">Воронеж</a></li>
+              <li><a href="#">Екатеринбург</a></li>
+              <li><a href="#">Казань</a></li>
+              <li><a href="#">Красноярск</a></li>
+              <li><a href="#">Нижний Новгород</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul class="popup_list">
+              <li><a href="#">Ростов-на-Дону</a></li>
+              <li><a href="#">Самара</a></li>
+              <li><a href="#">Томск</a></li>
+              <li><a href="#">Уфа</a></li>
+              <li><a href="#">Челябинск</a></li>
+              <li><a href="#">Ярославль</a></li>
+              <li><a href="#">Тверь</a></li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul class="popup_list">
+              <li><a href="#">Новосибирск</a></li>
+              <li><a href="#">Омск</a></li>
+              <li><a href="#">Пермь</a></li>
+              <li><a href="#">Выборг</a></li>
+              <li><a href="#">Мурманск</a></li>
+              <li><a href="#">Петрозаводск</a></li>
+              <li><a href="#">Великий Новгород</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+  </body>
+</html>
